@@ -1,0 +1,149 @@
+<div class="conditions-container">
+    <div class="conditions">
+
+        <h3>Выбраць Колькасць Посуду</h3>
+
+        <form class="value-service" method="GET">
+            <div class="container-selects">
+                <div class="left-block-selects">
+
+                    <select class="select-service select-plates">
+                        <option class="option-selected" value="" disabled {{#if plate0}}selected{{/if}} hidden>Талеркі ($1 за штуку)
+                        </option>
+                        <option value="1" {{#if plate1}}selected{{/if}}> 1 Талерка</option>
+                        <option value="2" {{#if plate2}}selected{{/if}}>2 Талеркі</option>
+                        <option value="3" {{#if plate3}}selected{{/if}}>3 Талеркі</option>
+                        <option value="4" {{#if plate4}}selected{{/if}}>4 Талеркі</option>
+                        <option value="5" {{#if plate5}}selected{{/if}}>5 Талерак</option>
+                        <option value="6" {{#if plate6}}selected{{/if}}>6 Талерак</option>
+                        <option value="7" {{#if plate7}}selected{{/if}}>7 Талерак</option>
+                        <option value="8" {{#if plate8}}selected{{/if}}>8 Талерак</option>
+                        <option value="9" {{#if plate9}}selected{{/if}}>9 Талерак</option>
+                        <option value="10" {{#if plate10}}selected{{/if}}>10 Талерак</option>
+                    </select>
+
+                    <select class="select-service select-vine-glasses">
+                        <option class="option-selected" value="" disabled {{#if wineGlass0}}selected{{/if}} hidden>Вінныя Келіхі ($0.8 з/ш)
+                        </option>
+                        <option value="0.8" {{#if wineGlass1}}selected{{/if}}>1 Вінны Келіх</option>
+                        <option value="1.6" {{#if wineGlass2}}selected{{/if}}>2 Вінныя Келіхі</option>
+                        <option value="2.4" {{#if wineGlass3}}selected{{/if}}>3 Вінныя Келіхі</option>
+                        <option value="3.2" {{#if wineGlass4}}selected{{/if}}>4 Вінныя Келіхі</option>
+                        <option value="4" {{#if wineGlass5}}selected{{/if}}>5 Вінных Келіхаў</option>
+                        <option value="4.8" {{#if wineGlass6}}selected{{/if}}>6 Вінных Келіхаў</option>
+                        <option value="5.6" {{#if wineGlass7}}selected{{/if}}>7 Вінных Келіхаў</option>
+                        <option value="6.4" {{#if wineGlass8}}selected{{/if}}>8 Вінных Келіхаў</option>
+                        <option value="7.2" {{#if wineGlass9}}selected{{/if}}> 9 Вінных Келіхаў</option>
+                        <option value="8" {{#if wineGlass10}}selected{{/if}}>10 Вінных Келіхаў</option>
+                    </select>
+
+                    <select class="select-service select-glasses">
+                        <option class="option-selected" value="" disabled {{#if glass0}}selected{{/if}} hidden>Шклянка ($0.8 з/ш)
+                        </option>
+                        <option value="0.8" {{#if glass1}}selected{{/if}}>1 Шклянка</option>
+                        <option value="1.6" {{#if glass2}}selected{{/if}}>2 Шклянкі</option>
+                        <option value="2.4" {{#if glass3}}selected{{/if}}>3 Шклянкі</option>
+                        <option value="3.2" {{#if glass4}}selected{{/if}}>4 Шклянкі</option>
+                        <option value="4" {{#if glass5}}selected{{/if}}>5 Шклянак</option>
+                        <option value="4.8" {{#if glass6}}selected{{/if}}>6 Шклянак</option>
+                        <option value="5.6" {{#if glass7}}selected{{/if}}>7 Шклянак</option>
+                        <option value="6.4" {{#if glass8}}selected{{/if}}>8 Шклянак</option>
+                        <option value="7.2" {{#if glass9}}selected{{/if}}>9 Шклянак</option>
+                        <option value="8" {{#if glass10}}selected{{/if}}>10 Шклянак</option>
+                    </select>
+
+                    <select class="select-service select-decanters">
+                        <option class="option-selected" value="" disabled selected hidden> Графіны ($2 з/ш)
+                        </option>
+                        <option value="2">1 Графін</option>
+                        <option value="4">2 Графіны</option>
+                        <option value="6">3 Графіны</option>
+                        <option value="8">4 Графіны</option>
+                        <option value="10">5 Графінаў</option>
+                    </select>
+
+                    <div class="checkbox-service">
+                        <label class="checkbox-napk">
+                            <input id="checkbox-napkins" type="checkbox">
+
+                            <span>Дадаць Сурвэткі ($4)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="right-block-selects">
+
+                    <select class="select-service select-knives">
+                        <option class="option-selected" value="" disabled selected hidden>Нажы ($0.5 з/ш)
+                        </option>
+                        <option value="0.5">1 Нож</option>
+                        <option value="1">2 Нажы</option>
+                        <option value="1.5">3 Нажы</option>
+                        <option value="2">4 Нажы</option>
+                        <option value="2.5">5 Нажоў</option>
+                        <option value="3">6 Нажоў</option>
+                        <option value="3.5">7 Нажоў</option>
+                        <option value="4">8 Нажоў</option>
+                        <option value="4.5">9 Нажоў</option>
+                        <option value="5">10 Нажоў</option>
+                    </select>
+
+                    <select class="select-service select-spoons">
+                        <option class="option-selected" value="" disabled selected hidden>Лыжкі ($0.5 з/ш)
+                        </option>
+                        <option value="0.5">1 Лыжка</option>
+                        <option value="1">2 Лыжкі</option>
+                        <option value="1.5">3 Лыжкі</option>
+                        <option value="2">4 Лыжкі</option>
+                        <option value="2.5">5 Лыжак</option>
+                        <option value="3">6 Лыжак</option>
+                        <option value="3.5">7 Лыжак</option>
+                        <option value="4">8 Лыжак</option>
+                        <option value="4.5">9 Лыжак</option>
+                        <option value="5">10 Лыжак</option>
+                    </select>
+
+                    <select class="select-service select-forks">
+                        <option class="option-selected" value="" disabled selected hidden>Відэлец ($0.5 з/ш)
+                        </option>
+                        <option value="0.5">1 Відэлец</option>
+                        <option value="1">2 Відэлец</option>
+                        <option value="1.5">3 Відэльцы</option>
+                        <option value="2">4 Відэльцы</option>
+                        <option value="2.5">5 Відэльцаў</option>
+                        <option value="3">6 Відэльцаў</option>
+                        <option value="3.5">7 Відэльцаў</option>
+                        <option value="4">8 Відэльцаў</option>
+                        <option value="4.5">9 Відэльцаў</option>
+                        <option value="5">10 Відэльцаў</option>
+                    </select>
+
+                    <select class="select-service select-rugs">
+                        <option class="option-selected" value="" disabled {{#if rug0}}selected{{/if}} hidden>Кілімкі ($0.3 з/ш)
+                        </option>
+                        <option value="0.3" {{#if rug1}}selected{{/if}}>1 Кілімак</option>
+                        <option value="0.6" {{#if rug2}}selected{{/if}}>2 Кілімкі</option>
+                        <option value="0.9" {{#if rug3}}selected{{/if}}>3 Кілімкі</option>
+                        <option value="1.2" {{#if rug4}}selected{{/if}}>4 Кілімкі</option>
+                        <option value="1.5" {{#if rug5}}selected{{/if}}>5 Кілімкаў</option>
+                        <option value="1.8" {{#if rug6}}selected{{/if}}>6 Кілімкаў</option>
+                        <option value="2.1" {{#if rug7}}selected{{/if}}>7 Кілімкаў</option>
+                        <option value="2.4" {{#if rug8}}selected{{/if}}>8 Кілімкаў</option>
+                        <option value="2.7" {{#if rug9}}selected{{/if}}>9 Кілімкаў</option>
+                        <option value="3" {{#if rug10}}selected{{/if}}>10 Кілімкаў</option>
+                    </select>
+
+                    <div class="checkbox-service">
+                        <label class="checkbox-napk">
+                            <input id="checkbox-decor" type="checkbox">
+
+                            <span>Дадаць Дэкор ($8)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <button class="button" id="btn-count">Палічыць</button>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<div class="container-price">
+    <div class="container-final-list">
+
+        <h4>Выніковы Спіс</h4>
+
+        <div class="total-number-goods">
+            <div class="position-goods bg-white">
+                <p>Талеркі <span>({{isTotalPlates}} штук)</span></p>
+                <p>$ {{isTotalCostPlates}}</p>
+            </div>
+
+            <div class="position-goods">
+                <p>Вінныя Келіхі <span>({{isTotalWineGlasses}} штук)</span></p>
+                <p>$ {{isTotalCostWineGlasses}}</p>
+            </div>
+
+            <div class="position-goods bg-white">
+                <p>Шкляні <span>({{isTotalGlasses}} штук)</span></p>
+                <p>$ {{isTotalCostGlasses}}</p>
+            </div>
+
+            <div class="position-goods">
+                <p>Графіны <span>({{isTotalDecanters}} штук)</span></p>
+                <p>$ {{isTotalCostDecanters}}</p>
+            </div>
+
+            <div class="position-goods bg-white">
+                <p>Нажы <span>({{isTotalKnives}} штук)</span></p>
+                <p>$ {{isTotalCostKnives}}</p>
+            </div>
+
+            <div class="position-goods">
+                <p>Лыжкі <span>({{isTotalSpoons}} штук)</span></p>
+                <p>$ {{isTotalCostSpoons}}</p>
+            </div>
+
+            <div class="position-goods bg-white">
+                <p>Відэльцы <span>({{isTotalForks}} штук)</span></p>
+                <p>$ {{isTotalCostForks}}</p>
+            </div>
+
+            <div class="position-goods">
+                <p>Кілімкі <span>({{isTotalRugs}} штук)</span></p>
+                <p>$ {{isTotalCostRugs}}</p>
+            </div>
+
+            <div class="position-goods bg-white">
+                <p>Сурвэткі <span>({{isNapkins}} штук)</span></p>
+                <p>$ {{isNapkins}}</p>
+            </div>
+
+            <div class="position-goods">
+                <p>Дэкор <span>({{isDecor}} штук)</span></p>
+                <p>$ {{isDecor}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-total-price">
+
+        <p class="header-total-price">Выніковая цана</p>
+
+        <div class="getting-final-price">
+            <div class="form-price-group">
+                <label for="promo-сode">Дадайце промокод</label>
+
+                <div class="container-promo-code">
+                    <input type="text" id="promo-сode" class="{{#if isPromoCode}}input-disabled{{/if}}"  {{#if isPromoCode}}disabled{{/if}} placeholder="{{#unless isPromoCode}}Увядзіце Тут{{/unless}}">
+
+                    <button class="btn-promo-code {{#if isPromoCode}}btn-promo-active{{/if}}" {{#if isPromoCode}}disabled{{/if}}>
+                        <svg viewBox="0 0 18 14">
+                            <path d="M5.9999 11.2L1.7999 6.99998L0.399902 8.39998L5.9999 14L17.9999 1.99998L16.5999 0.599976L5.9999 11.2Z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="btn-clear {{#unless isPromoCode}}btn-clear-disabled{{/unless}}" {{#unless isPromoCode}}disabled{{/unless}}>Выдаліць промокод</button>
+            </div>
+
+            <div class="total-price"><p>Да аплаты:</p><span> $</span><span class="final-cost"> {{#if isPromoCode}}{{isTotalPayPromo}}{{/if}} {{#unless isPromoCode}}{{isTotalPay}}{{/unless}}</span></div>
+        </div>
+    </div>
+</div>
+
+

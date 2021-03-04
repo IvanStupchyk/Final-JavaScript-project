@@ -1,0 +1,149 @@
+<div class="conditions-container">
+    <div class="conditions">
+
+        <h3>Add Details</h3>
+
+        <form class="value-service" method="GET">
+            <div class="container-selects">
+                <div class="left-block-selects">
+
+                    <select class="select-service select-plates">
+                        <option class="option-selected" value="" {{#if plate0}}selected{{/if}} disabled hidden>Plates ($1 per piece)
+                        </option>
+                        <option value="1" {{#if plate1}}selected{{/if}}> 1 plate</option>
+                        <option value="2" {{#if plate2}}selected{{/if}}>2 plates</option>
+                        <option value="3" {{#if plate3}}selected{{/if}}>3 plates</option>
+                        <option value="4" {{#if plate4}}selected{{/if}}>4 plates</option>
+                        <option value="5" {{#if plate5}}selected{{/if}}>5 plates</option>
+                        <option value="6" {{#if plate6}}selected{{/if}}>6 plates</option>
+                        <option value="7" {{#if plate7}}selected{{/if}}>7 plates</option>
+                        <option value="8" {{#if plate8}}selected{{/if}}>8 plates</option>
+                        <option value="9" {{#if plate9}}selected{{/if}}>9 plates</option>
+                        <option value="10" {{#if plate10}}selected{{/if}}>10 plates</option>
+                    </select>
+
+                    <select class="select-service select-vine-glasses">
+                        <option class="option-selected" value="" disabled {{#if wineGlass0}}selected{{/if}} hidden>Wine Glasses ($0.8 p/p)
+                        </option>
+                        <option value="0.8" {{#if wineGlass1}}selected{{/if}}>1 Wine Glass</option>
+                        <option value="1.6" {{#if wineGlass2}}selected{{/if}}>2 Wine Glasses</option>
+                        <option value="2.4" {{#if wineGlass3}}selected{{/if}}>3 Wine Glasses</option>
+                        <option value="3.2" {{#if wineGlass4}}selected{{/if}}>4 Wine Glasses</option>
+                        <option value="4" {{#if wineGlass5}}selected{{/if}}>5 Wine Glasses</option>
+                        <option value="4.8" {{#if wineGlass6}}selected{{/if}}>6 Wine Glasses</option>
+                        <option value="5.6" {{#if wineGlass7}}selected{{/if}}>7 Wine Glasses</option>
+                        <option value="6.4" {{#if wineGlass8}}selected{{/if}}>8 Wine Glasses</option>
+                        <option value="7.2" {{#if wineGlass9}}selected{{/if}}> 9 Wine Glasses</option>
+                        <option value="8" {{#if wineGlass10}}selected{{/if}}>10 Wine Glasses</option>
+                    </select>
+
+                    <select class="select-service select-glasses">
+                        <option class="option-selected" value="" disabled {{#if glass0}}selected{{/if}} hidden>Glasses ($0.8 p/p)
+                        </option>
+                        <option value="0.8" {{#if glass1}}selected{{/if}}>1 Glass</option>
+                        <option value="1.6" {{#if glass2}}selected{{/if}}>2 Glasses</option>
+                        <option value="2.4" {{#if glass3}}selected{{/if}}>3 Glasses</option>
+                        <option value="3.2" {{#if glass4}}selected{{/if}}>4 Glasses</option>
+                        <option value="4" {{#if glass5}}selected{{/if}}>5 Glasses</option>
+                        <option value="4.8" {{#if glass6}}selected{{/if}}>6 Glasses</option>
+                        <option value="5.6" {{#if glass7}}selected{{/if}}>7 Glasses</option>
+                        <option value="6.4" {{#if glass8}}selected{{/if}}>8 Glasses</option>
+                        <option value="7.2" {{#if glass9}}selected{{/if}}>9 Glasses</option>
+                        <option value="8" {{#if glass10}}selected{{/if}}>10 Glasses</option>
+                    </select>
+
+                    <select class="select-service select-decanters">
+                        <option class="option-selected" value="" disabled selected hidden> Decanters ($2 p/p)
+                        </option>
+                        <option value="2">1 Decanter</option>
+                        <option value="4">2 Decanters</option>
+                        <option value="6">3 Decanters</option>
+                        <option value="8">4 Decanters</option>
+                        <option value="10">5 Decanters</option>
+                    </select>
+
+                    <div class="checkbox-service">
+                        <label class="checkbox-napk">
+                            <input id="checkbox-napkins" type="checkbox">
+
+                            <span>Add Napkins ($4)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="right-block-selects">
+
+                    <select class="select-service select-knives">
+                        <option class="option-selected" value="" disabled selected hidden>Knives ($0.5 p/p)
+                        </option>
+                        <option value="0.5">1 Knife</option>
+                        <option value="1">2 Knives</option>
+                        <option value="1.5">3 Knives</option>
+                        <option value="2">4 Knives</option>
+                        <option value="2.5">5 Knives</option>
+                        <option value="3">6 Knives</option>
+                        <option value="3.5">7 Knives</option>
+                        <option value="4">8 Knives</option>
+                        <option value="4.5">9 Knives</option>
+                        <option value="5">10 Knives</option>
+                    </select>
+
+                    <select class="select-service select-spoons">
+                        <option class="option-selected" value="" disabled selected hidden>Spoons ($0.5 p/p)
+                        </option>
+                        <option value="0.5">1 Spoon</option>
+                        <option value="1">2 Spoons</option>
+                        <option value="1.5">3 Spoons</option>
+                        <option value="2">4 Spoons</option>
+                        <option value="2.5">5 Spoons</option>
+                        <option value="3">6 Spoons</option>
+                        <option value="3.5">7 Spoons</option>
+                        <option value="4">8 Spoons</option>
+                        <option value="4.5">9 Spoons</option>
+                        <option value="5">10 Spoons</option>
+                    </select>
+
+                    <select class="select-service select-forks">
+                        <option class="option-selected" value="" disabled selected hidden>Forks ($0.5 p/p)
+                        </option>
+                        <option value="0.5">1 Fork</option>
+                        <option value="1">2 Forks</option>
+                        <option value="1.5">3 Forks</option>
+                        <option value="2">4 Forks</option>
+                        <option value="2.5">5 Forks</option>
+                        <option value="3">6 Forks</option>
+                        <option value="3.5">7 Forks</option>
+                        <option value="4">8 Forks</option>
+                        <option value="4.5">9 Forks</option>
+                        <option value="5">10 Forks</option>
+                    </select>
+
+                    <select class="select-service select-rugs">
+                        <option class="option-selected" value="" disabled {{#if rug0}}selected{{/if}} hidden>Rugs ($0.3 p/p)
+                        </option>
+                        <option value="0.3" {{#if rug1}}selected{{/if}}>1 Rug</option>
+                        <option value="0.6" {{#if rug2}}selected{{/if}}>2 Rugs</option>
+                        <option value="0.9" {{#if rug3}}selected{{/if}}>3 Rugs</option>
+                        <option value="1.2" {{#if rug4}}selected{{/if}}>4 Rugs</option>
+                        <option value="1.5" {{#if rug5}}selected{{/if}}>5 Rugs</option>
+                        <option value="1.8" {{#if rug6}}selected{{/if}}>6 Rugs</option>
+                        <option value="2.1" {{#if rug7}}selected{{/if}}>7 Rugs</option>
+                        <option value="2.4" {{#if rug8}}selected{{/if}}>8 Rugs</option>
+                        <option value="2.7" {{#if rug9}}selected{{/if}}>9 Rugs</option>
+                        <option value="3" {{#if rug10}}selected{{/if}}>10 Rugs</option>
+                    </select>
+
+                    <div class="checkbox-service">
+                        <label class="checkbox-napk">
+                            <input id="checkbox-decor" type="checkbox">
+
+                            <span>Add Decor ($8)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <button class="button" id="btn-count" >Count</button>
+    </div>
+</div>

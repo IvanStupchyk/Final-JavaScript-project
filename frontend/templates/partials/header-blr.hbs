@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="heading">
+        <h2>Best Serving</h2>
+
+        <div class="header-menu">
+            <a class="header-link {{#if isAboutPage}}active{{/if}}" href="/#/">
+                Мова
+            </a>
+            <a class="header-link {{#if isConstructorPage}}active{{/if}}" href="/#/constructor">
+                Канструктар
+            </a>
+            <a class="header-link {{#if isConditionsPage}}active{{/if}}" href="/#/conditions">
+                Умовы
+            </a>
+            <a class="header-link {{#if isTotalPricePage}}active{{/if}}" href="/#/total-price">
+                Выніковая цана
+            </a>
+            <label class="checkbox-theme">
+                <input id="dark-checkbox" type="checkbox" {{#if isStatusTheme}}checked{{/if}}>
+                <span></span>
+            </label>
+        </div>
+    </div>
+
+</header>

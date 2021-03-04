@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="heading">
+        <h2>Best Serving</h2>
+
+        <div class="header-menu">
+            <a class="header-link {{#if isAboutPage}}active{{/if}}" href="/#/">
+                Language
+            </a>
+            <a class="header-link {{#if isConstructorPage}}active{{/if}}" href="/#/constructor">
+                Сonstructor
+            </a>
+            <a class="header-link {{#if isConditionsPage}}active{{/if}}" href="/#/conditions">
+                Conditions
+            </a>
+            <a class="header-link {{#if isTotalPricePage}}active{{/if}}" href="/#/total-price">
+                Total price
+            </a>
+            <label class="checkbox-theme">
+                <input id="dark-checkbox" type="checkbox" {{#if isStatusTheme}}checked{{/if}}>
+                <span></span>
+            </label>
+        </div>
+    </div>
+
+</header>
